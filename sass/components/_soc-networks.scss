@@ -17,14 +17,14 @@
   transition-property: background-color, color;
   transition-duration: var(--animation-duration);
   transition-timing-function: var(--animation-timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+  }
 }
 .soc-icon {
   fill: currentColor;
-}
-.soc-link:hover,
-.soc-link:focus {
-  background-color: var(--accent-color);
-  color: #ffffff;
 }
 
 /* .soc-link:hover,

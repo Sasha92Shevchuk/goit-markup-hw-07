@@ -10,11 +10,11 @@
   transition-property: color;
   transition-duration: var(--animation-duration);
   transition-timing-function: var(--animation-timing-function);
-}
-.logo:hover,
-.logo:focus {
-  color: var(--accent-color);
-}
-.logo > .web {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  .web {
+    color: var(--accent-color);
+  }
 }

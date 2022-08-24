@@ -1,0 +1,103 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+.footer-contacts > .logo {
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+.studio {
+  color: var(--accent-white-color);
+
+  transition-property: color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
+}
+
+.studio:hover,
+.studio:focus {
+  color: var(--accent-color);
+}
+
+/* .logo-footer:hover,
+.logo-footer:focus {
+  color: var(--accent-color);
+} -  не працює???? */
+
+.map-link {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--accent-white-color);
+
+  transition-property: color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
+}
+.map-link:hover,
+.map-link:focus {
+  color: var(--accent-color);
+}
+.footer-link {
+  display: block;
+  margin-bottom: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  transition-property: color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+.address {
+  font-style: normal;
+}
+
+.footer > .container {
+  display: flex;
+}
+
+.exhortation {
+  display: block;
+}
+
+.footer-soc {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.footer-soc > .title {
+  margin-bottom: 20px;
+  color: var(--accent-white-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-soc-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-soc-link .soc-icon {
+  fill: #ffffff;
+}
+
+.subscribe {
+  margin-left: 93px;
+  padding-top: 12px;
+  position: relative;
+}
+
+.subscribe > .title {
+  margin-bottom: 20px;
+  color: var(--accent-white-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}

@@ -1,0 +1,20 @@
+.logo {
+  margin-right: 93px;
+
+  color: #000000;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  transition-property: color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+.logo > .web {
+  color: var(--accent-color);
+}

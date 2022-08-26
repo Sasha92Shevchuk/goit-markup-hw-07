@@ -1,9 +1,14 @@
-.form-subscribe {
+.footer__subscription {
+  margin-left: 93px;
+  padding-top: 12px;
+  position: relative;
+}
+.subscription__form {
   display: flex;
   justify-content: center;
 }
 
-.input-email {
+.subscription__input-email {
   width: 358px;
   height: 50px;
   background: #2f303a;
@@ -14,12 +19,12 @@
   border-radius: 4px;
 }
 
-.subscribe-icon {
+.subscription__icon {
   fill: currentColor;
   margin-left: 12px;
 }
 
-.subscribe-button {
+.subscription__button {
   width: 200px;
   height: 50px;
   display: flex;

@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   column-gap: 30px;
+  @extend %list;
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   width: 170px;
   height: 92px;

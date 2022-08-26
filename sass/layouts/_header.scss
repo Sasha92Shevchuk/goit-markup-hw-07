@@ -1,21 +1,21 @@
-.page-header {
+.header {
   border-bottom: 1px solid #ececec;
   /* padding-top: 24px;
   padding-bottom: 25px; */
 }
 
-.header-nav {
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.site-nav {
+.navigation__list {
   display: flex;
   color: var(--title-text-color);
-  & .item {
+  & .navigation__item {
     background-color: transparent;
   }
-  & .item:not(:last-child) {
+  & .navigation__item:not(:last-child) {
     margin-right: 50px;
   }
   & .link {
@@ -24,9 +24,7 @@
     padding-bottom: 32px;
 
     color: var(--title-text-color);
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font(500, null, 1.14, 0.02em);
 
     transition-property: color;
     transition-duration: var(--animation-duration);
@@ -53,20 +51,18 @@
       }
     }
   }
+  @extend %list;
 }
 
-.contacts-nav {
+.contacts {
   display: flex;
   margin-left: auto;
-  & .item + .item {
+  &__item + .contacts__item {
     margin-left: 50px;
   }
   & .link {
     color: var(--primary-text-color);
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
+    @include font(500, null, 1.14, 0.02em);
     transition-property: color;
     transition-duration: var(--animation-duration);
     transition-timing-function: var(--animation-timing-function);
@@ -75,6 +71,7 @@
       color: var(--accent-color);
     }
   }
+  @extend %list;
 }
 
 .icon-mail {

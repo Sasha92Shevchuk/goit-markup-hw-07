@@ -7,10 +7,7 @@
   color: var(--accent-white-color);
   background-color: var(--accent-color);
   font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  @include font(700, 16px, 1.88, 0.06em);
   transition: background-color,
     box-shadow var(--animation-duration) var(--animation-timing-function);
   &:hover,

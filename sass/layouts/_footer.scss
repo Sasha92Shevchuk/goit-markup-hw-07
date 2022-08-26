@@ -2,13 +2,21 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+  &__title {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--accent-white-color);
+    @include font(700, null, 1.14, null);
+
+    text-transform: uppercase;
+  }
 }
-.footer-contacts > .logo {
+.footer__contacts > .logo {
   display: block;
   margin-bottom: 20px;
   margin-right: 0;
 }
-.studio {
+.logo__studio {
   color: var(--accent-white-color);
 
   transition-property: color;
@@ -25,77 +33,52 @@
   color: var(--accent-color);
 } -  не працює???? */
 
-.map-link {
-  display: block;
-  margin-bottom: 9px;
-  color: var(--accent-white-color);
-
-  transition-property: color;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-timing-function);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-
-.footer-link {
-  display: block;
-  margin-bottom: 9px;
-
-  color: rgba(255, 255, 255, 0.6);
-
-  transition-property: color;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-timing-function);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-
 .address {
   font-style: normal;
+  &__map-link {
+    display: block;
+    margin-bottom: 9px;
+    color: var(--accent-white-color);
+
+    transition-property: color;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--animation-timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  &__footer-link {
+    display: block;
+    margin-bottom: 9px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    transition-property: color;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--animation-timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  &__info {
+    @extend %list;
+  }
 }
 
 .footer > .container {
   display: flex;
 }
 
-.exhortation {
-  display: block;
-}
-
-.footer-soc {
+.footer__soc {
   margin-left: 70px;
   padding-top: 12px;
-  & > .title {
-    margin-bottom: 20px;
-    color: var(--accent-white-color);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-  }
 }
 
 .footer-soc-link {
   background: rgba(255, 255, 255, 0.1);
   & .soc-icon {
     fill: #ffffff;
-  }
-}
-
-.subscribe {
-  margin-left: 93px;
-  padding-top: 12px;
-  position: relative;
-  & > .title {
-    margin-bottom: 20px;
-    color: var(--accent-white-color);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
   }
 }

@@ -2,29 +2,29 @@
   display: flex;
   justify-content: center;
   column-gap: 10px;
-}
+  @extend %list;
+  &__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #afb1b8;
 
-.soc-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #afb1b8;
-
-  transition-property: background-color, color;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-timing-function);
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-    color: #ffffff;
+    transition-property: background-color, color;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--animation-timing-function);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: #ffffff;
+    }
   }
-}
-.soc-icon {
-  fill: currentColor;
+  &__icon {
+    fill: currentColor;
+  }
 }
 
 /* .soc-link:hover,

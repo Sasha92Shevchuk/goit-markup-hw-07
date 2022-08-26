@@ -42,9 +42,7 @@
 
 .modal-title {
   text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(700, 20px, 1.15, null);
   color: #212121;
   margin-bottom: 12px;
 }
@@ -55,9 +53,7 @@
 }
 
 .form-label {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font(null, 12px, 1.17, 0.01em);
   margin-bottom: 4px;
 }
 
@@ -72,10 +68,8 @@
 
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font(null, 16px, 1.17, 0.01em);
+
   color: var(--title-text-color);
   transition: outline-color var(--animation-duration)
     var(--animation-timing-function);
@@ -124,10 +118,7 @@
   &::placeholder {
     font-family: "Roboto";
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include font(400, 12px, 1.17, 0.01em);
 
     color: rgba(117, 117, 117, 0.5);
   }

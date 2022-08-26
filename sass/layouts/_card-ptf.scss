@@ -1,9 +1,6 @@
 .title-project {
   color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(700, 18px, 2, 0.06);
 }
 .project-type {
   margin-top: 4px;
@@ -12,12 +9,13 @@
   line-height: 1.88;
 }
 
-.list.btn {
+.btn {
   display: flex;
   justify-content: center;
   column-gap: 8px;
   padding: 0;
   margin-bottom: 50px;
+  @extend %list;
 }
 
 .card-ptf {
@@ -32,6 +30,7 @@
     margin-top: var(--card-ptf);
     flex-basis: calc(100% / 3 - var(--card-ptf));
   }
+  @extend %list;
 }
 
 .card-ptf-link {

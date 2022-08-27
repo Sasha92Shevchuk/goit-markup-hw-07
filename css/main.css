@@ -616,7 +616,7 @@ body {
 .footer-soc-link {
   background: rgba(255, 255, 255, 0.1);
 }
-.footer-soc-link .soc-icon {
+.footer-soc-link .soc__icon {
   fill: #ffffff;
 }
 

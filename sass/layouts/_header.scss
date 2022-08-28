@@ -1,7 +1,7 @@
 .header {
-  border-bottom: 1px solid #ececec;
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
+  &--border-bottom {
+    border-bottom: 1px solid #ececec;
+  }
 }
 
 .navigation {
@@ -18,7 +18,7 @@
   & .navigation__item:not(:last-child) {
     margin-right: 50px;
   }
-  & .link {
+  .navigation__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -33,7 +33,7 @@
     &:focus {
       color: var(--accent-color);
     }
-    &.current {
+    &.navigation__link--current {
       color: var(--accent-color);
       position: relative;
       &::after {
@@ -60,7 +60,7 @@
   &__item + .contacts__item {
     margin-left: 50px;
   }
-  & .link {
+  &__link {
     color: var(--primary-text-color);
     @include font(500, null, 1.14, 0.02em);
     transition-property: color;
@@ -74,9 +74,7 @@
   @extend %list;
 }
 
-.icon-mail {
-  width: 16px;
-  height: 12px;
+.contacts__icon {
   /* background-color: tomato; */
   fill: var(--primary-text-color);
   margin-right: 10px;

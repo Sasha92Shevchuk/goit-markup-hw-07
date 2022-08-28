@@ -1,4 +1,13 @@
-.button-portfolio {
+.btn {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  padding: 0;
+  margin-bottom: 50px;
+  @extend %list;
+}
+
+.btn__portfolio {
   display: inline-block;
   cursor: pointer;
   border-radius: 4px;
